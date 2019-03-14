@@ -43,6 +43,16 @@ body {
 /*--------------------------------------------------------------
 2.0 Alignment
 --------------------------------------------------------------*/
+.logo{
+  height: 150px;
+}
+@media (max-width: 750px) {
+      .logo{
+        display: block;
+        margin: 0 auto;
+        height: 150px;
+      }
+  }
 .alignleft {
   display: inline;
   float: left;
