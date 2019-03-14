@@ -1,0 +1,2 @@
+var bourboneat_app=bourboneat_app||{};bourboneat_app.header={init:function(e){var n=e("#menu-main-mobile").unbind(),i=e("#menu-main"),o=e("#secondary");i.removeClass("show"),o.removeClass("show"),n.on("click",function(e){e.preventDefault(),i.slideToggle(function(){i.is(":hidden")&&i.removeAttr("style")}),o.slideToggle(function(){o.is(":hidden")&&o.removeAttr("style")})})}},function(e){bourboneat_app.header.init(e)}(jQuery);
+//# sourceMappingURL=main.js.map

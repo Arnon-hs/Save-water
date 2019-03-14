@@ -1,0 +1,68 @@
+/*
+ * add/change settings in
+ * /sass/base/_grid-settings.scss
+ *
+ * for more info: http://neat.bourbon.io
+ */
+
+header.site-header,
+div.site-content,
+footer.site-footer {
+	@include outer-container;
+}
+
+// mobile first, breakpoints in /base/_grid-settings.scss
+.secondary {
+	@include span-columns($grid-columns);
+}
+
+.site-main {
+	@include span-columns($grid-columns);
+}
+
+// http://css-tricks.com/rems-ems/
+html {
+	font-size: $em-base * 0.875; // 14px default rem
+}
+
+@include media($medium-screen) {
+	html {
+		font-size: $em-base;  // 16px default rem
+	}
+}
+
+@include media($large-screen) {
+
+	.secondary {
+	   	@include span-columns(($grid-columns / 4) + 1);
+	}
+	
+	.site-main {
+	    @include span-columns($grid-columns - ($grid-columns / 4) - 1);
+
+		.span-columns-12 {
+			@include span-columns($grid-columns);
+		}
+
+		.span-columns-6 {
+			@include span-columns($grid-columns / 2);
+		}
+
+	}
+
+	.site-content {
+		background-color: transparent;
+	}
+
+}
+
+@include media($wide-screen) {
+
+	.secondary {
+	   	@include span-columns($grid-columns / 4);
+	}
+	.site-main {
+	    @include span-columns($grid-columns - ($grid-columns / 4));
+	}
+
+}
