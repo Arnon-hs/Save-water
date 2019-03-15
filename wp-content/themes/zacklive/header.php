@@ -29,7 +29,7 @@
 						<?php endif; // End header image check. ?>
 						<div class="site-branding">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-								<img class="logo" src="images/savewater.jpg"></a>
+								<img class="logo" src=<?php echo get_template_directory_uri();?>/assets/images/savewater.jpg></a>
 						</div><!-- .site-branding -->
 					</div><!-- .site-header-inner -->
 				</div><!-- .row -->
