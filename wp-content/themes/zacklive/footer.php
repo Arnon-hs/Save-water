@@ -12,7 +12,7 @@
             <div class="row">
             	<div class="site-footer-inner col-sm-12">
             		<div class="site-info">
-            			<?php do_action( 'zacklive_credits' ); ?>
+            			<!-- <?php do_action( 'zacklive_credits' ); ?>
             			<?php printf( __( 'Proudly powered by %s', 'zacklive' ), 'WordPress' ); ?>
             			<span class="sep"> | </span>
             			<?php printf( __( 'Theme: %1$s by %2$s.', 'zacklive' ), 'ZackLive', '<a href="http://zacklive.com/" rel="designer">Zack</a>' ); ?>
