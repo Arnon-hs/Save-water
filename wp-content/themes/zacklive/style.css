@@ -43,14 +43,24 @@ body {
 /*--------------------------------------------------------------
 2.0 Alignment
 --------------------------------------------------------------*/
+.social{
+  float: right;
+  margin-right: 200px;
+  margin-top: 130px;
+}
+@media (max-width: 750px) {
+  .social{
+    display: none;
+  }
+}
 .logo{
-  height: 150px;
+  height: 200px;
 }
 @media (max-width: 750px) {
       .logo{
         display: block;
         margin: 0 auto;
-        height: 150px;
+        height: 100px;
       }
   }
 .alignleft {

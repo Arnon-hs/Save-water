@@ -12,6 +12,9 @@
             <div class="row">
             	<div class="site-footer-inner col-sm-12">
             		<div class="site-info">
+                        <hr>
+                        <p class="Copyright">Text © Copyright, 2017</p>
+                            <?php echo DISPLAY_ULTIMATE_PLUS(); ?>
             			<!-- <?php do_action( 'zacklive_credits' ); ?>
             			<?php printf( __( 'Proudly powered by %s', 'zacklive' ), 'WordPress' ); ?>
             			<span class="sep"> | </span>
