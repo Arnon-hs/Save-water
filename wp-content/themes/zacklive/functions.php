@@ -2,6 +2,18 @@
 /**
  * functions and definitions
  */
+function my_login_logo(){
+ echo '
+ <style type="text/css">
+ #login h1 a { background: url('. get_bloginfo('template_directory') .'/assets/images/admin_logo.png) no-repeat 0 0 !important; }
+ </style>';
+}
+add_action('login_head', 'my_login_logo');
+ //Ставим ссылку с логотипа на сайт, а не на wordpress.org 
+add_filter( 'login_headerurl', create_function('', 'return get_home_url();') );
+ 
+/* убираем title в логотипе "сайт работает на wordpress" */
+add_filter( 'login_headertitle', create_function('', 'return false;') );
 
 require_once( 'library/setup.php' );
 require_once( 'library/nav.php' );
